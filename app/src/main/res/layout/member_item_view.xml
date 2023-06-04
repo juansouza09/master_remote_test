@@ -1,6 +1,5 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="8dp"
@@ -14,6 +13,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Nome"
+        android:textColor="@color/light_blue_900"
         android:textSize="16sp"
         app:fontFamily="@font/poppins_semibold"
         app:layout_constraintStart_toEndOf="@id/memberPhoto"
@@ -38,6 +38,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="ID"
+        android:textColor="@color/light_blue_900"
         android:textSize="16sp"
         app:fontFamily="@font/poppins_semibold"
         app:layout_constraintStart_toEndOf="@id/memberPhoto"
@@ -64,6 +65,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="Cidade:"
+        android:textColor="@color/light_blue_900"
         android:textSize="16sp"
         app:fontFamily="@font/poppins_semibold"
         app:layout_constraintStart_toEndOf="@id/nomeText2"
@@ -86,9 +88,9 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
+        android:src="@drawable/ic_profile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
