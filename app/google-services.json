@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "70064860216",
+    "firebase_url": "https://master-remote-test-default-rtdb.firebaseio.com",
+    "project_id": "master-remote-test",
+    "storage_bucket": "master-remote-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70064860216:android:214c12ae0ae51e1504cacd",
+        "android_client_info": {
+          "package_name": "br.solutionsjs.luastation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70064860216-ui9u4k1in8jd0vmvg2sjet01qnqgufl8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC22x9wfNwIsRPOqK8PFYaSbDhxQ2MENEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70064860216-ui9u4k1in8jd0vmvg2sjet01qnqgufl8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
