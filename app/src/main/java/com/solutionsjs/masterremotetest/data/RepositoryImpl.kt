@@ -4,11 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.*
 import com.solutionsjs.masterremotetest.data.model.Member
 import com.solutionsjs.masterremotetest.ui.MainActivity
 import kotlin.coroutines.resume

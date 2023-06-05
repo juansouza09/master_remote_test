@@ -39,6 +39,11 @@ class HomeFragment : Fragment() {
         setUpRV()
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
+    }
+
     private fun setUpRV() {
         binding.rvMembers.layoutManager =
             LinearLayoutManager(this.requireContext(), RecyclerView.VERTICAL, false)
