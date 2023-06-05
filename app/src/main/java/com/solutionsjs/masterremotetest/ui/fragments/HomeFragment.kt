@@ -5,14 +5,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.solutionsjs.masterremotetest.databinding.FragmentHomeBinding
+import com.solutionsjs.masterremotetest.domain.MasterViewModel
 import com.solutionsjs.masterremotetest.ui.adapters.MemberAdapter
 
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
+
+    private val viewModel: MasterViewModel by viewModels()
 
     private lateinit var myAdapter: MemberAdapter
 
@@ -28,6 +32,10 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         myAdapter = MemberAdapter()
+        viewModel.getMembers()
+        viewModel.membersLiveData.observe(viewLifecycleOwner) { member ->
+            myAdapter.submitList(member)
+        }
         setUpRV()
     }
 

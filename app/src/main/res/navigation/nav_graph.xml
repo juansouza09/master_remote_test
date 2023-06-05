@@ -10,10 +10,5 @@
         android:name="com.solutionsjs.masterremotetest.ui.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home"/>
-    <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.solutionsjs.masterremotetest.ui.fragments.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
 
 </navigation>
